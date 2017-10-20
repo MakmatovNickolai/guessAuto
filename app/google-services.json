@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "101916086217",
+    "project_id": "guess-auto"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101916086217:android:f7094008d4f9f502",
+        "android_client_info": {
+          "package_name": "com.perfectdeveloperr.guessauto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101916086217-5mjk5uiv49d6k0vnkjo3qgkg43cavunv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.perfectdeveloperr.guessauto",
+            "certificate_hash": "407b752d3e2d86aec795783d53c496836c333426"
+          }
+        },
+        {
+          "client_id": "101916086217-l00kg20smufmffb99vieq57rhsl867m2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDId4l716lBYxs-4N3xYt5-7MQCWY3mNUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

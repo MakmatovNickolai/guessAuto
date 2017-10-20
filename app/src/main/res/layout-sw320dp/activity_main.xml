@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.perfectdeveloperr.guessauto.MainActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/chronometr"
+        ads:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        ads:layout_constraintHorizontal_bias="0.636"
+        ads:layout_constraintLeft_toRightOf="@+id/progressBar"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:layout_constraintTop_toBottomOf="@+id/imageView2"
+        ads:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:background="@drawable/imageview"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="14dp"
+        ads:layout_constraintBottom_toTopOf="@+id/progressBar" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="20dp"
+        ads:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        ads:layout_constraintRight_toRightOf="@+id/imageView5" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="151dp"
+        android:layout_height="167dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="Alfa Romeo 8C"
+            android:textAllCaps="false"
+            android:textIsSelectable="false"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_above="@+id/button3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:elevation="0dp"
+            android:text="Audi R8 V10 Plus"
+            android:textAllCaps="false"
+            android:textIsSelectable="false"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="150dp"
+        android:layout_height="167dp"
+        android:orientation="vertical"
+        android:layout_marginRight="9dp"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="9dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="Alfa Romeo 8C"
+            android:textAllCaps="false"
+            android:textIsSelectable="false"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg"
+            android:text="Alfa Romeo Giulia"
+            android:textAllCaps="false"
+            android:textIsSelectable="false"
+            android:textSize="16dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+
+        android:layout_marginLeft="8dp"
+
+        android:orientation="horizontal"
+        ads:layout_constraintBottom_toTopOf="@+id/imageView2"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        ads:layout_constraintVertical_bias="0.0"
+        android:weightSum="1"
+        android:layout_marginStart="8dp"
+        android:id="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/prev"
+            android:onClick="toMenu"
+            android:layout_weight="0.57" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/heart2"
+
+            ads:layout_constraintBottom_toTopOf="@+id/progressBar"
+            ads:layout_constraintLeft_toLeftOf="parent"
+            ads:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.00"
+
+            android:src="@drawable/heart2"
+            ads:layout_constraintBottom_toTopOf="@+id/progressBar"
+            ads:layout_constraintLeft_toLeftOf="parent"
+            ads:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/heart2"
+            ads:layout_constraintBottom_toTopOf="@+id/progressBar"
+            ads:layout_constraintLeft_toLeftOf="parent"
+
+            ads:layout_constraintRight_toRightOf="parent" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.57"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        tools:layout_height="38dp"
+        ads:adUnitId="@string/blok"
+        android:layout_marginTop="8dp"
+        ads:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        android:layout_marginBottom="8dp"
+        ads:layout_constraintBottom_toTopOf="@+id/imageView2"
+        android:layout_marginLeft="8dp"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        ads:layout_constraintRight_toRightOf="parent"
+        ads:layout_constraintHorizontal_bias="0.502"
+        ads:layout_constraintVertical_bias="0.615" />
+
+
+</android.support.constraint.ConstraintLayout>
